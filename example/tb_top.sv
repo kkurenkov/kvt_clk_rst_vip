@@ -10,14 +10,16 @@
   `define INC_TB_TOP
   
     `include "uvm_macros.svh"
-    import uvm_pkg::*;
     `include "kvt_clk_rst_pkg.sv"
-
+    
+    import uvm_pkg::*;
     import kvt_clk_rst_pkg::*;
+
     `include "kvt_base_test.sv"
   
   module tb_top();
 
+    // -------------------- //
     //  Clock and the reset interface.
     // -------------------- //
     kvt_clk_if clk_if ();
